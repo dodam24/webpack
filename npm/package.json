@@ -12,7 +12,8 @@
     "type": "commonjs",
     "dependencies": {
         "jquery": "^4.0.0",
-        "jquery-ui": "^1.14.2"
+        "jquery-ui": "^1.14.2",
+        "vue": "^3.5.28"
     },
     "devDependencies": {}
 }
