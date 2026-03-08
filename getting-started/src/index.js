@@ -4,7 +4,7 @@ import _ from "lodash";
 // var _ = require("lodash");
 
 // CommonJS 모듈 시스템을 사용하여 path 모듈을 가져옴 (ES5)
-var path = require("path");
+// var path = require("path");
 
 function component() {
     var element = document.createElement("div");
