@@ -24,5 +24,7 @@ module.exports = {
     stats: {
         colors: true,
     },
+    // 번들된 코드와 원본 코드의 매핑 정보를 생성하여
+    // 브라우저 DevTools에서 원본 코드 기준으로 디버깅 가능
     devtool: "source-map",
 };
