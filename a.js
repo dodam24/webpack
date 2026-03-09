@@ -129,8 +129,8 @@ console.log(num); // 10
  *    - 모듈 간의 의존성(import/export) 관리
  *
  * 2. Code Splitting
- *    하나의 큰 번들 파일을 여러 개의 chunk로 나눠서 필요한 시점에 로드하는 방식.
- *    초기 로딩 속도 개선
+ *    하나의 큰 번들 파일을 여러 개의 chunk로 나눠서 필요한 시점에 로드하는 방식
+ *    → 초기 로딩 속도 개선
  *    (ex: Dynamic Import, React.lazy)
  *
  * 3. 트랜스파일링
