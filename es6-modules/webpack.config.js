@@ -2,11 +2,14 @@ var path = require("path");
 
 module.exports = {
     mode: "production",
-    // 최초 진입점이자 번들링 대상이 되는 파일의 경로
+
+    // entry: 최초 진입점이자 번들링 대상이 되는 파일의 경로
     entry: "./js/app.js",
+
+    // output: 번들링된 결과물이 저장될 경로와 파일 이름을 지정
     output: {
-        path: path.resolve(__dirname, "build"),
-        filename: "main.bundle.js",
+        path: path.resolve(__dirname, "build"), // 해당 파일의 경로
+        filename: "main.bundle.js", // 웹팩으로 빌드한 파일의 이름
     },
     module: {
         rules: [
