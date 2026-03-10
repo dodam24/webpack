@@ -2,6 +2,7 @@ var path = require("path");
 
 module.exports = {
     mode: "production",
+    // 최초 진입점이자 번들링 대상이 되는 파일의 경로
     entry: "./js/app.js",
     output: {
         path: path.resolve(__dirname, "build"),
