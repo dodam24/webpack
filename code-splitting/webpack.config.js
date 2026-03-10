@@ -1,10 +1,10 @@
 var path = require("path");
 
 module.exports = {
-    mode: "none",
+    mode: "none", // production, development, none
     entry: "./index.js",
     output: {
-        filename: "bundle.js",
+        filename: "[chunkhash].js",
         path: path.resolve(__dirname, "dist"),
     },
     module: {
