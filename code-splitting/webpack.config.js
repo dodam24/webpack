@@ -25,6 +25,7 @@ module.exports = {
     //         },
     //     ],
     // },
+    // 로더: 파일을 해석하고 변환하는 과정에 사용
     module: {
         rules: [
             {
@@ -33,5 +34,6 @@ module.exports = {
             },
         ],
     },
-    plugins: [new MiniCssExtractPlugin()],
+    // 플러그인: 해당 로더로 처리된 결과물을 최적화하거나 추가적인 기능을 제공
+    plugins: [new MiniCssExtractPlugin(), new webpack.ProgressPlugin()], // 생성자 함수로 생성한 객체 인스턴스만 추가
 };
