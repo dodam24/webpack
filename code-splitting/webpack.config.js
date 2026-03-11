@@ -30,10 +30,11 @@ module.exports = {
         rules: [
             {
                 test: /\.css$/,
-                use: [{ loader: MiniCssExtractPlugin.loader }, "css-loader"],
+                // use: [{ loader: MiniCssExtractPlugin.loader }, "css-loader"],
+                use: ["style-loader", "css-loader"],
             },
         ],
     },
     // 플러그인: 해당 로더로 처리된 결과물을 최적화하거나 추가적인 기능을 제공
-    plugins: [new MiniCssExtractPlugin(), new webpack.ProgressPlugin()], // 생성자 함수로 생성한 객체 인스턴스만 추가
+    // plugins: [new MiniCssExtractPlugin(), new webpack.ProgressPlugin()], // 생성자 함수로 생성한 객체 인스턴스만 추가
 };
