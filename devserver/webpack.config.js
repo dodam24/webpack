@@ -8,8 +8,14 @@ module.exports = {
         filename: "bundle.js",
         path: path.resolve(__dirname, "dist"),
     },
+    // webpac-dev-server 설정
     devServer: {
+        // 개발 서버 포트
         port: 9000,
+
+        // Hot Module Replacement 활성화
+        // 변경된 모듈만 교체하여 전체 새로고침 없이 반영
+        hot: true,
     },
     plugins: [
         new HtmlWebpackPlugin({
